@@ -7,7 +7,10 @@ struct node{
 struct node *head;
 struct node *tail;
 int size;
-void addLast(int val){
+struct node * addLast(int val){
+    if(head==NULL){
+        return NULL;
+    }
     struct node *temp = new node;
     temp->data=val;
     temp->next=NULL;
@@ -21,6 +24,7 @@ void addLast(int val){
         tail=temp;
         size++;
     }
+    return tail;
 }
 int main(){
     
