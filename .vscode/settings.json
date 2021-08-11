@@ -1,5 +1,12 @@
 {
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "array": "cpp",
+        "*.tcc": "cpp",
+        "complex": "cpp",
+        "scoped_allocator": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "valarray": "cpp"
     }
 }
