@@ -5,7 +5,7 @@ struct node{
   struct node *next;
 };
 struct node *head;
-struct node * remove_first(){
+struct node * remove_first() {
     if(head==NULL){
         return NULL;
     }

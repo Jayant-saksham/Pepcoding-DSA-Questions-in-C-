@@ -14,7 +14,7 @@ struct node * addLast(int val){
     struct node *temp = new node;
     temp->data=val;
     temp->next=NULL;
-    if(size==0){
+    if(size==0) {
         head=temp;
         tail=temp;
         size++;
