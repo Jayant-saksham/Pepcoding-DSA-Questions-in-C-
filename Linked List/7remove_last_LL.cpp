@@ -8,7 +8,7 @@ struct node *head;
 struct node *tail;
 void removeLast(){
     if(head==NULL){
-        return;
+        return; 
     }
     else if(head->next==NULL){
         delete head;

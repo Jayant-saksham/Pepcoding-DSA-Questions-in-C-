@@ -12,7 +12,7 @@ struct node * remove_first() {
     struct node *ptr = head;
     head=head->next;
     delete ptr;
-    return head;
+    return head; 
 }
 int main(){
     
