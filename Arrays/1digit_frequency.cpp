@@ -3,7 +3,7 @@ using namespace std;
 int digits(int n, int target){
     int ans=0;
     int rem;
-    while(n>0){
+    while(n>0) {
         rem=n%10;
         if(rem==target){
             ans++;

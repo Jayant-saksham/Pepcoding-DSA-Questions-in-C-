@@ -6,22 +6,15 @@ struct node{
 };
 struct node *head;
 struct node *tail;
-void removeLast(){
-    if(head==NULL){
-        return; 
+void deleteLast() {
+    struct node *ptr = head;
+    while(ptr->next->next!=NULL) {
+        ptr = ptr->next;
     }
-    else if(head->next==NULL){
-        delete head;
-        return;
-    }
-    else{
-        struct node *second_last = head;
-        while(second_last->next->next!=NULL){
-            second_last=second_last->next;
-        }
-        delete second_last->next;
-        second_last->next=NULL;
-    }
+    tail = ptr;
+    ptr = ptr->next;
+    tail->next = NULL;
+    free(ptr);
 }
 int main(){
     

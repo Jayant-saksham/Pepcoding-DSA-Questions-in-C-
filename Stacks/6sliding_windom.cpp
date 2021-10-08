@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-vector<int> NGR(int A[], int n){
+vector<int> NGR(int A[], int n) {
     vector<int> v;
     stack<int> s;
     for(int i=(n-1);i>=0;i--){
@@ -26,11 +26,11 @@ vector<int> NGR(int A[], int n){
     reverse(v.begin(), v.end());
     return v;
 }
-vector<int> slidingWindow(int A[], int n, int k){
+vector<int> slidingWindow(int A[], int n, int k) {
     int j = 0;
     vector<int> ngr = NGR(A, n);
     vector<int> ans;
-    for(int i=0;i<=(n-k);i++){
+    for(int i=0;i<=(n-k);i++) {
         if(j<i){
             j=i;
         }
@@ -41,7 +41,7 @@ vector<int> slidingWindow(int A[], int n, int k){
     }
     return ans;    
 }
-int main(){
+int main() {
     int n;
     cin>>n;
     int A[n];
