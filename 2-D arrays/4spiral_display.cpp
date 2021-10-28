@@ -17,7 +17,7 @@ int main(){
     int maxc = m-1;
     int count=0;
     int totalelement=n*m;
-    while(true){
+    while(true) {
         if(count>=totalelement){
             break;
         }

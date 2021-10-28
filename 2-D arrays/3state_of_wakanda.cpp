@@ -12,7 +12,7 @@ int main(){
         }
     }
     for(int j=0;j<m;j++){
-        if(j%2==0){
+        if(j%2==0) {
             for(int i=0;i<n;i++){
                 cout<<A[i][j]<<endl;
             }

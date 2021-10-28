@@ -22,10 +22,10 @@ int main(){
         }
     }
     
-    if(m1==n2){
+    if(m1==n2) {
         int C[n1][m2];
-        for(int i=0;i<n1;i++){
-            for(int j=0;j<m2;j++){
+        for(int i=0;i<n1;i++) {
+            for(int j=0;j<m2;j++) {
                 C[i][j]=0;
             }
         }
@@ -37,7 +37,7 @@ int main(){
             }
         }
         for(int i=0;i<n1;i++){
-            for(int j=0;j<m2;j++){
+            for(int j=0;j<m2;j++) {
                 cout<<C[i][j]<<" ";
             }
             cout<<endl;
