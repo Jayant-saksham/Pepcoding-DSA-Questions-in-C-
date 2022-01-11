@@ -39,6 +39,23 @@ int climb_stairs_TAB(int n){
     delete []dp;
     return ans;
 }
+int climb_stairs_NEW(int n) {
+    int *dp = new int[n+1];
+    for(int i=0;i<=n;i++) {
+        dp[i] = 0;
+    }
+    dp[0] = 1;
+    for(int i=1;i<=n;i++) {
+        for(int j=1;j<=3;j++) {
+            if(i-j >=0) {
+                dp[i] += dp[i-j];
+            }
+        }
+    }
+    int ans = dp[n];
+    delete dp;
+    return ans;
+}
 int main(){
     int n;
     cin>>n;
